@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hire me - Video Summariser</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/summary.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">Video Summariser</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-project">References</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/hire-me">Try here</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page hire-me-page">
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <h2>Try here</h2>
+                </div>
+                <form action="/hire-me" id="get-link", method="post">
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Enter Youtube Link</label>
+                        <textarea class="form-control" id="message" name="link"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-md-6 col-lg-7 button"><button id="calculate" class="btn btn-primary text-center border rounded d-block w-100" type="submit">Summarise</button></div>
+                        </div>
+                    </div>
+                </form>
+                <!-- This part is to show the summary -->
+                {% if summary|length %}
+                <div id="result" id="summaryid" class="col-md-6 offset-3 summary">The summary is <div class="taken-summary">{{summary}}</div></div>
+                {% else %}
+                <div id="result" id="summaryid" style="display: none;" class="col-md-6 offset-3 summary">The summary is <div class="taken-summary">{{summary}}</div></div>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="/about-team">About Team</a><a href="/about-project">NLP Project</a></div>
+        </div>
+    </footer>
+    
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>
