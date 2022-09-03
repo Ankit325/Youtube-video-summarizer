@@ -11,14 +11,14 @@
 #### Description
 >This is an web application which takes in a youtube link and gives summary of the video. Here, it takes the transcript of the video which is uploaded in youtube using Youtube_transcript_api and summarizes using sklearn.
 ##### Tech Stack:
--Python
--Sklearn
--nltk
--Flask
--HTML
--CSS
--Bootstrap
--youtube_transcript_api
+- Python
+- Sklearn
+- nltk
+- Flask
+- HTML
+- CSS
+- Bootstrap
+- youtube_transcript_api
 
 ##### Installation:
 - pip install flask sklearn nltk youtube_transcript_api
