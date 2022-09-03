@@ -1,5 +1,6 @@
 # YouTube Video Summarizer
-#### Video Demo:  https://youtu.be/Jj1FOS9O4KI
+### Video Demo:  
+> https://youtu.be/Jj1FOS9O4KI
 #### Output
 ![image](https://user-images.githubusercontent.com/54737533/188267795-e6fa2c7a-e39c-44f2-8cab-dc19df295584.png)
 ![image](https://user-images.githubusercontent.com/54737533/188267798-1fb6101c-40fc-439a-8d14-9faf8bb1de2d.png)
@@ -8,8 +9,8 @@
 ![image](https://user-images.githubusercontent.com/54737533/188267812-fb361c81-93f9-412c-8e61-fb34a4d2cece.png)
 ![image](https://user-images.githubusercontent.com/54737533/188267813-dccc5363-73ec-46b6-a50d-44ad797109a9.png)
 
-#### Description
->This is an web application which takes in a youtube link and gives summary of the video. Here, it takes the transcript of the video which is uploaded in youtube using Youtube_transcript_api and summarizes using sklearn.
+### Description
+> This is an web application which takes in a youtube link and gives summary of the video. Here, it takes the transcript of the video which is uploaded in youtube using Youtube_transcript_api and summarizes using sklearn.
 ##### Tech Stack:
 - Python
 - Sklearn
